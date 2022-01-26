@@ -1,0 +1,36 @@
+body {
+   background-color: aqua;
+   span {
+      color: rgb(223, 81, 15);
+      font-size: 70px;
+      padding: 50px;
+      display: block;
+   }
+}
+
+.block {
+   font-size: 80px;
+   color: rgb(24, 185, 91);
+   background: url("@img/0675.jpg");
+   transition: all 0.5s;
+   user-select: none;
+}
+
+@media (max-width: 978px) {
+   .block {
+      font-size: 70px;
+   }
+}
+
+@media (max-width: 978px) {
+   span {
+      padding: 60px;
+   }
+}
+
+@media (max-width: 978px) {
+   body {
+      background-color: aqua;
+      transition: all 0.5s;
+   }
+}
