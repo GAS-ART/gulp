@@ -1,3 +1,5 @@
+'use strict';
+
 //import * as gasArt from './modules/functions.js';
 // console.log(gasArt.block());
 
