@@ -1,9 +1,4 @@
-export function block() {
-   let block = document.querySelector('.block');
-   return block
-}
-
-
+/* Проверка поддержки webp, добавление класса webp или no-webp для HTML */
 export function isWebp() {
    // Проверка поддержки webp
    function testWebP(callback) {
