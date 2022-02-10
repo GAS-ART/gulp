@@ -1,1 +1,30 @@
-<div class="popup"></div>
+<div id="popup" class="popup">
+   <div class="popup__body">
+      <div class="popup__content">
+         <a href="#" class="popup__close close-popup">X</a>
+         <div class="popup__title">
+            <h4>ФОРМА ЗАКАЗА ОБРАТНОГО ЗВОНКА</h4>
+         </div>
+         <div class="popup__text">
+            <form class="popup__form" id="test" name="popupform" method="post" action="#" autocomplete="on"
+               onsubmit="return validate(this)">
+               <div class="contacts-form__item data popup-data">
+                  <input class="data__text-field" type="text" name="name" placeholder="Как к Вам обращаться?">
+                  <div class="data__error">
+                     <p class="text-field-name">Это поле не должно быть пусты</p>
+                  </div>
+               </div>
+               <div class="contacts__phone popup-phone">
+                  <input class="phone" type="text" name="phone" placeholder="+7 (__) __ - __ - __">
+                  <p class="text-field-phone">Номер телефона должен содержать 10 цифр!</p>
+               </div>
+               <div class="popup__button">
+                  <div class="button">
+                     <input class="submit" type="submit" value="ЗАКАЗАТЬ ЗВОНОК">
+                  </div>
+               </div>
+            </form>
+         </div>
+      </div>
+   </div>
+</div>

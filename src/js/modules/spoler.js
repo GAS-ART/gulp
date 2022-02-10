@@ -1,12 +1,12 @@
 //Добавить класс .toggle-block - в блок в котором будет нажатие
 
-
 function windowSize() {
    if ($(window).width() > '768') {
-      $('.nextSiblingBlock').slideDown();
+      $('.toggle-block').siblings('.nextblock').slideDown();
+      $('.toggle-block').removeClass('active');
    }
    else {
-      $('.nextSiblingBlock').slideUp()
+      $('.toggle-block').siblings('.nextblock').slideUp()
    }
 }
 
@@ -21,3 +21,4 @@ $('.toggle-block').click(function (event) {
 
 })
 
+windowSize();
