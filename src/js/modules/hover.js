@@ -1,3 +1,7 @@
+
+if (window.matchMedia("(pointer: fine)").matches) { } // Для устройств с мышкой
+if (window.matchMedia("(pointer: coarse)").matches) { } // Для тачскринов
+
 const hover = document.querySelectorAll(".hover");
 hover.forEach((item) => {
    if (window.matchMedia("(pointer: coarse)").matches && window.matchMedia("(hover: hover)").matches && !item.classList.contains('active')) {
@@ -20,3 +24,7 @@ hover.forEach((item) => {
       });
    }
 });
+
+
+
+
