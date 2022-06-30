@@ -18,7 +18,7 @@ function calls(func, ms) {
       }
       clearInterval(lastCall);
       lastCall = setTimeout(() => {
-         call = false;
+         call = false; // Delete this switch if wont to call function immediatly after 1 s
          return func.apply(this, arguments);
       }, ms);
    }
